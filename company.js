@@ -15,7 +15,7 @@ const wait = require('./helpers/wait')
   })
   
   const csvData = []
-  let pageNum = 3000
+  let pageNum = 0
 
   while (pageNum <= urls.length) {
     const requests = urls.slice(pageNum, pageNum + 20).map((url, companyIndex) => {
